@@ -1,0 +1,351 @@
+
+.main {
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+}
+
+.main .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #585858;
+}
+
+.main .nav img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.main .greet {
+    margin: 50px 0px;
+    font-size: 56px;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.main .greet span {
+    background: -webkit-linear-gradient(16deg, #66ff4b, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.main .card {
+    height: 200px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main .card img {
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.main .card p {
+    color: #585858;
+    font-size: 17px;
+}
+
+.main .card:hover {
+    background-color: #dfe4ea;
+}
+
+.main-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.search-box img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.search-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 4px;
+    font-size: 18px;
+}
+
+.search-box div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main .bottom-info {
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.result {
+    padding: 0px 5%;
+    max-height: 75vh;
+    overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.result-title {
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.result img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.result-data {
+    display: flex;
+    align-items: start;
+    gap: 2px;
+}
+
+.loader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loader hr {
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #66ff4b, #fff, #66ff4b);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+    0% {
+        background-position: -800px 0px;
+    }
+
+    100% {
+        background-position: 800px 0px;
+    }
+}
+
+.result-data p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+@media (max-width:712px) {
+    .main-bottom input {
+        flex: none;
+        width: 85%;
+    }
+
+    .main-bottom img {
+        width: 20px;
+    }
+
+    .search-box {
+        padding: 5px 10px;
+    }
+
+    .search-box div {
+        gap: 5px;
+    }
+}
+
+.input-box {
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.input-box:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+body.dark-mode {
+    --background-color: #0c0c0c;
+    --text-color: #ffffff;
+    --nav-color: #c9c9c9;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.main .nav {
+    color: var(--nav-color)
+}
+
+b {
+    font-weight: bold;
+}
+
+.search-box {
+    color: black;
+}
+
+.mobile-sidebar-btn {
+    display: none;
+}
+
+/* Mostra o botão apenas em dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .mobile-sidebar-btn {
+        display: block;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.imagess {
+    max-width: 100%;
+    /* Faz a imagem se ajustar ao tamanho do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra sutil */
+    transition: transform 0.3s;
+    /* Animação suave ao passar o mouse */
+}
+
+.imagess:hover {
+    transform: scale(1.05);
+    /* Aumenta a imagem levemente ao passar o mouse */
+}
+
+.caixa-texto {
+    position: absolute; /* Posiciona a caixa de texto ao lado da imagem */
+    top: 0; /* Alinha ao topo da imagem */
+    left: 100%; /* Posiciona à direita da imagem */
+    background-color: #fff; /* Cor de fundo da caixa de texto */
+    padding: 10px; /* Espaçamento interno da caixa de texto */
+    border: 1px solid #ddd; /* Borda da caixa de texto */
+    border-radius: 10px; /* Bordas arredondadas para a caixa de texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para a caixa de texto */
+}
+
+/* Adiciona uma borda vermelha ao input em caso de erro */
+.input-error {
+    border: 2px solid red; /* Borda vermelha */
+}
+
+/* Estilo para a mensagem de erro */
+.error-message {
+    color: red; /* Cor do texto da mensagem de erro */
+    font-family: Outfit;
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold;
+    margin-top: 4px; /* Espaçamento acima da mensagem */
+    position: absolute; /* Para posicionar no canto superior direito do input */
+    right: 0; /* Alinha à direita */
+    transform: translateY(-10px); /* Move a mensagem para cima */
+    opacity: 0; /* Inicialmente invisível */
+    transition: transform 0.3s ease, opacity 0.5s ease; /* Transições suaves */
+}
+
+/* Classe que ativa a animação de erro */
+.error-message.show {
+    transform: translateY(-40px); /* Move a mensagem para cima quando visível */
+    opacity: 1; /* Torna a mensagem visível */
+}
+
+
+.floating-image-container {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: flex-start; /* Alinha os itens ao topo do contêiner */
+    position: relative; /* Permite que o ícone seja posicionado em relação ao contêiner */
+    width: fit-content; /* Ajusta o contêiner ao tamanho do conteúdo */
+}
+
+.floating-image {
+    width: 70px; /* A imagem ocupará 100% do contêiner */
+    height: 70px; /* Mantém a proporção da imagem */
+    max-width: 150px; /* Limite máximo para a largura */
+    border-radius: 15px; /* Aumenta o raio da borda para 15px */
+    object-fit: cover; /* Para garantir que a imagem se ajuste corretamente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+    transition: transform 0.3s; /* Animação suave ao passar o mouse */
+}
+
+.floating-image:hover {
+    transform: scale(1.25); /* Aumenta a imagem levemente ao passar o mouse */
+}
+
+.delete-icon {
+    position: absolute; /* Posiciona o ícone em relação ao contêiner */
+    top: -0px; /* 10 pixels acima da imagem */
+    right: 5px; /* Ajuste conforme necessário para centralizar o ícone sobre a imagem */
+    width: 24px; /* Ajuste o tamanho conforme necessário */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    z-index: 1; /* Garante que o ícone fique acima da imagem flutuante */
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente para destaque */
+    border-radius: 50%; /* Faz o fundo ser circular */
+    padding: 5px; /* Espaçamento interno para o ícone */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para dar destaque */
+}

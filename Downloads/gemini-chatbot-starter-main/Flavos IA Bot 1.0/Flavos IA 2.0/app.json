@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "a51607c9-84ac-4868-ae0b-d3ae78d245a6"
+      }
+    },
+    "android": {
+      "package": "com.gaua.flavosia20"
+    },
+    "ios": {
+      "bundleIdentifier": "com.flavosia.beta"
+    }
+  }
+}

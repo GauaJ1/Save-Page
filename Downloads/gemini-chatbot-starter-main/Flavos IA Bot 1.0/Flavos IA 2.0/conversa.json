@@ -1,0 +1,42 @@
+[
+  {
+    "tipo": "mensagem",
+    "remetente": "Pessoa",
+    "conteudo": "olá"
+  },
+  {
+    "tipo": "resposta",
+    "remetente": "Flavos IA",
+    "conteudo": "oi"
+  },
+  {
+    "tipo": "mensagem",
+    "remetente": "Pessoa",
+    "conteudo": "como você está?"
+  },
+  {
+    "tipo": "resposta",
+    "remetente": "Flavos IA",
+    "conteudo": "muito bem, e você?"
+  },
+  {
+    "tipo": "mensagem",
+    "remetente": "Pessoa",
+    "conteudo": "estou bem, obrigado"
+  },
+  {
+    "tipo": "resposta",
+    "remetente": "Flavos IA",
+    "conteudo": "que bom, é sempre bom saber que as pessoas estão bem"
+  },
+  {
+    "tipo":"mensagem",
+    "remetente": "Pessoa",
+    "conteudo": "preciso de alguma ajuda?"
+  },
+  {
+    "tipo": "resposta",
+    "remetente":"Flavos IA",
+    "conteudo": "se precisar de algo, não hesite em perguntar"
+  }
+]

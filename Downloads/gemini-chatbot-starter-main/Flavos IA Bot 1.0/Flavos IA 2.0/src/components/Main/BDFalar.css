@@ -1,0 +1,53 @@
+.text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.btn-falar {
+    background-color: #0602f1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-falar:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: #18067b;
+}
+
+.btn-falar.falando {
+    background-color: #2d00f3;
+}
+
+.btn-parar {
+    background-color: #ff6961;
+    /* Cor de fundo do botão */
+    color: #ffffff;
+    /* Cor do texto do botão */
+    border: none;
+    /* Remover borda do botão */
+    padding: 10px 20px;
+    /* Espaçamento interno do botão */
+    font-size: 16px;
+    /* Tamanho do texto do botão */
+    cursor: pointer;
+    /* Cursor do mouse quando passa sobre o botão */
+    border-radius: 5px;
+    /* Arredondamento do botão */
+    margin-top: 20px;
+    
+}
+
+.btn-parar:hover {
+    background-color: #ff3737;
+    /* Cor de fundo do botão quando hover */
+}
